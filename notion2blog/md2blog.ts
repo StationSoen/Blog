@@ -1,5 +1,5 @@
 import path from "path"
-import fs, { read } from "fs"
+import fs from "fs"
 
 import { NotionPage } from "./notion2md"
 
@@ -20,6 +20,7 @@ export const makeBlogPosts = (notionPages: NotionPage[]) => {
       encoding: "utf-8",
     })
   }
+  console.log("Write markdown file from Notion Pages : Comeplete")
 }
 
 const createMdFile = (notionPage: NotionPage): string => {

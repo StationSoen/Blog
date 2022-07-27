@@ -1,9 +1,10 @@
+import { Client } from "@notionhq/client"
 import {
   PageObjectResponse,
   PartialPageObjectResponse,
 } from "@notionhq/client/build/src/api-endpoints"
 import { NotionToMarkdown } from "notion-to-md"
-import { notionClient, postDatabaseId } from "./constants"
+import dotenv from "dotenv"
 
 export interface NotionPage {
   notionPageId: string
@@ -15,12 +16,18 @@ export interface NotionPage {
 }
 
 export const getNotionPages = async (): Promise<NotionPage[]> => {
+  const notionClient = new Client({
+    auth: process.env.NOTION_CLIENT_KEY,
+  })
   const databaseResponse = await notionClient.databases.query({
-    database_id: postDatabaseId as string,
+    database_id: process.env.POST_DATABASE_ID as string,
   })
   const postPageIds = databaseResponse.results.map(
     (e: PageObjectResponse | PartialPageObjectResponse) => e.id
   )
+
+  // log
+  console.log("Get Post from notion database : Comeplete")
 
   const notionPages: NotionPage[] = []
   for (const pageId of postPageIds) {
@@ -28,10 +35,17 @@ export const getNotionPages = async (): Promise<NotionPage[]> => {
     notionPages.push(result)
   }
 
+  // log
+  console.log("Get Post Data from Page Ids : Comeplete")
+
   return notionPages
 }
 
 const getNotionPageFromPageId = async (pageId: string): Promise<NotionPage> => {
+  dotenv.config()
+  const notionClient = new Client({
+    auth: process.env.NOTION_CLIENT_KEY,
+  })
   const page = await notionClient.pages.retrieve({
     page_id: pageId,
   })
