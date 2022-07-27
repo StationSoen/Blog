@@ -33,6 +33,8 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "@notionhq/client": "^2.1.0",
+    "@types/node": "^18.6.1",
     "notion-to-md": "^2.5.3",
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",
