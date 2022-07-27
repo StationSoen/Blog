@@ -34,9 +34,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run notion to blog script
         run: yarn notion2blog-start
-        env:
-          POST_DATABASE_ID: ${{secrets.POST_DATABASE_ID}}
-          NOTION_CLIENT_KEY: ${{secrets.NOTION_CLIENT_KEY}}
+        # env:
+          # POST_DATABASE_ID: ${{secrets.POST_DATABASE_ID}}
+          # NOTION_CLIENT_KEY: ${{secrets.NOTION_CLIENT_KEY}}
         
           
 
