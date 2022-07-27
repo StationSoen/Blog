@@ -8639,6 +8639,13 @@ not@^0.1.0:
   resolved "https://registry.yarnpkg.com/not/-/not-0.1.0.tgz#c9691c1746c55dcfbe54cbd8bd4ff041bc2b519d"
   integrity sha512-5PDmaAsVfnWUgTUbJ3ERwn7u79Z0dYxN9ErxCpVJJqe2RK0PJ3z+iFUxuqjwtlDDegXvtWoxD/3Fzxox7tFGWA==
 
+notion-to-md@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/notion-to-md/-/notion-to-md-2.5.3.tgz#9cb41156e8bf99197c7291950ca9d63a39e63bce"
+  integrity sha512-M3K8HazamqwJ/kmBMvtaGm9TL/SENQG1b3wXraUFYBJ5ipQUrWBuJEyToiqPLs8TNA0OHH8IzgFxwnBNrd7pwQ==
+  dependencies:
+    markdown-table "^2.0.0"
+
 npm-run-path@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
