@@ -1,3 +1,7 @@
+import {
+  PageObjectResponse,
+  PartialPageObjectResponse,
+} from "@notionhq/client/build/src/api-endpoints"
 import { NotionToMarkdown } from "notion-to-md"
 import { notionClient, postDatabaseId } from "./constants"
 
@@ -14,7 +18,9 @@ export const getNotionPages = async (): Promise<NotionPage[]> => {
   const databaseResponse = await notionClient.databases.query({
     database_id: postDatabaseId as string,
   })
-  const postPageIds = databaseResponse.results.map(e => e.id)
+  const postPageIds = databaseResponse.results.map(
+    (e: PageObjectResponse | PartialPageObjectResponse) => e.id
+  )
 
   const notionPages: NotionPage[] = []
   for (const pageId of postPageIds) {
