@@ -6,7 +6,7 @@ name: Update Post from Notion
 on:
   schedule:
     - cron: "30 14 * * 1-5"
-    
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -32,13 +32,18 @@ jobs:
         run: yarn install
 
       # Runs a set of commands using the runners shell
+      - name: echo console2-hello
+        run: yarn console2-hello
+        env:
+          POST_DATABASE_ID: ${{secrets.POST_DATABASE_ID}}
+          NOTION_CLIENT_KEY: ${{secrets.NOTION_CLIENT_KEY}}
+
+      # Runs a set of commands using the runners shell
       - name: Run notion to blog script
         run: yarn notion2blog-start
-        # env:
-          # POST_DATABASE_ID: ${{secrets.POST_DATABASE_ID}}
-          # NOTION_CLIENT_KEY: ${{secrets.NOTION_CLIENT_KEY}}
-        
-          
+        env:
+          POST_DATABASE_ID: ${{secrets.POST_DATABASE_ID}}
+          NOTION_CLIENT_KEY: ${{secrets.NOTION_CLIENT_KEY}}
 
       # Commit And Push
       - name: Commit changes & push

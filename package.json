@@ -55,6 +55,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "notion2blog-start": "npx ts-node ./notion2blog/main.ts",
-    "notion2blog-nodemon": "npx nodemon --exec npx ts-node ./notion2blog/main.ts"
+    "notion2blog-nodemon": "npx nodemon --exec npx ts-node ./notion2blog/main.ts",
+    "console2-hello": "echo hello world"
   }
 }
