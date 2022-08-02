@@ -2,7 +2,7 @@
 title: DP Study
 date: 2022-08-02T13:59:00.000Z
 createdAt: 2022-07-28T06:12:00.000Z
-category: Algorithm
+category: Algorithm
 ---
 
 ## 막대기 자르기 문제
