@@ -9,7 +9,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Bio = () => {
+const Bio2 = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
@@ -33,7 +33,7 @@ const Bio = () => {
   return (
     <div className="bio">
       <StaticImage
-        className="bio-avatar"
+        className="bio-avatar bg-red-600 h-8 w-full"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile-pic.png"
@@ -52,7 +52,8 @@ const Bio = () => {
         </p>
       )}
     </div>
+    // <div className="bg-red-600 h-8 w-full"></div>
   )
 }
 
-export default Bio
+export default Bio2
