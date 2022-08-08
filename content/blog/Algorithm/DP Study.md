@@ -1,6 +1,6 @@
 ---
 title: DP Study
-date: 2022-08-02T13:59:00.000Z
+date: 2022-08-08T15:51:00.000Z
 createdAt: 2022-07-28T06:12:00.000Z
 category: Algorithm
 ---
@@ -123,7 +123,7 @@ DIFF | k: 7, l: 6, ABCBDAB, BDCABA. 4
 > 🎇 무게 제한이 50인 배낭에 위와 같은 세 개 중 가치가 최대가 되도록 물건을 넣는 문제
 
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8184e123-b920-4b7e-81b6-dcd84ac372d1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220802%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220802T144037Z&X-Amz-Expires=3600&X-Amz-Signature=fe0ee1a04cc6fffaaf9acdd5752c8dc6e21f83accbb6680c2fe86ddb2bf4891e&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8184e123-b920-4b7e-81b6-dcd84ac372d1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220808%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220808T155226Z&X-Amz-Expires=3600&X-Amz-Signature=c640da6da82f5a56a119b1f27d2dcc38f14d28e7677e809000b64e676d2c8b50&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 |           | 0 | 1    | 2    | 3    | 4    | 5     | 6     | 7     |
