@@ -39,7 +39,7 @@ const BlogPostTemplate = ({ data, location }) => {
             <Margin margin={20} />
             <hr />
             <Margin margin={20} />
-            <div className="">
+            <div>
               <section
                 dangerouslySetInnerHTML={{ __html: post.html }}
                 itemProp="articleBody"
@@ -50,18 +50,25 @@ const BlogPostTemplate = ({ data, location }) => {
         <Margin margin={20} />
         <hr />
         <Margin margin={20} />
-        <div className="flex flex-row justify-between w-full bg-red-400">
+        <div className="flex flex-col justify-between w-full bg-red-400">
+          <h2 className="text-2xl font-oneMobile text-key-blue">
+            다른 포스트들
+          </h2>
+          <Margin margin={16} />
           {previous && (
-            <div className="flex p-4 ">
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            </div>
+            <>
+              <div className="flex p-4 hover:text-key-blue ">
+                <Link to={previous.fields.slug} rel="prev">
+                  {previous.frontmatter.title}
+                </Link>
+              </div>
+              <Margin margin={8} />
+            </>
           )}
           {next && (
-            <div className="flex p-4">
+            <div className="flex p-4 hover:text-key-blue">
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                {next.frontmatter.title}
               </Link>
             </div>
           )}

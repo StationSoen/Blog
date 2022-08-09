@@ -30,14 +30,14 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
+            <li key={post.fields.slug} className="py-6">
               <article
                 className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2>
+                  <h2 className="text-2xl">
                     <Link to={post.fields.slug} itemProp="url">
                       <span
                         className="font-medium font-oneMobile text-key-blue"
@@ -47,12 +47,13 @@ const BlogIndex = ({ data, location }) => {
                       </span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <small className="text-lg text-b-l">
+                    {post.frontmatter.date}
+                  </small>
                 </header>
                 <section>
                   <p
-                    // style={{ fontFamily: "IBM Plex Sans KR" }}
-                    className="sans"
+                    className="text-base text-b-m"
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
