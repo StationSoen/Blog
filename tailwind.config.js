@@ -7,12 +7,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gmarket: "GmarketSansMedium",
+        gmarket: "GmarketSans",
         oneMobile: "ONE-Mobile-Title",
         nixgon: "NIXGONM-Vb",
+        score: "S-CoreDream",
       },
       colors: {
         key: {
+          lidi: "#1e93ff",
+          manta: "#5343f3",
           blue: "#2c4173",
           light_blue: "#5d79b1",
           grey: "#6b7275",
