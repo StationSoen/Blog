@@ -298,18 +298,15 @@ const ProjectCard = ({
           <p className="z-10 text-xl font-bold md:text-3xl ">{title}</p>
         </div>
         {badgeText && badgeColor && (
-          <>
-            <Margin isHorizontal margin={16} />
-            <p
-              className="px-2 py-[2px] md:text-xs text-[0.5rem] border rounded-full "
-              style={{
-                borderColor: badgeColor,
-                color: badgeColor,
-              }}
-            >
-              {badgeText}
-            </p>
-          </>
+          <p
+            className="md:ml-4 px-2 py-[2px] md:text-xs text-[0.5rem] border rounded-full hidden md:flex  "
+            style={{
+              borderColor: badgeColor,
+              color: badgeColor,
+            }}
+          >
+            {badgeText}
+          </p>
         )}
       </div>
       <Margin margin={4} />
@@ -351,7 +348,7 @@ const ProjectCard = ({
       <Margin margin={24} />
       <p className="text-base font-bold md:text-lg ">링크</p>
       <Margin margin={8} />
-      <div className="flex flex-row gap-1">
+      <div className="flex flex-col gap-2 md:gap-1 md:flex-row">
         {links.map(e => (
           <a href={e.url} className="ml-4 text-sm md:text-base ">
             {e.title}
