@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react"
 import { Margin } from "../components/Margin"
 import { colors } from "../constraint"
+import { Link } from "./portfolio"
 
 export default () => {
   return (
@@ -8,52 +9,58 @@ export default () => {
       <Container>
         {/* Header */}
         <div className="flex flex-col items-end">
-          <p className="text-lg ">다양한 환경에 스스로를 노출시키는 것이</p>
-          <p className="text-lg ">최고의 학습 전략이다</p>
+          <p className="text-base md:text-lg ">
+            다양한 환경에 스스로를 노출시키는 것이
+          </p>
+          <p className="text-base md:text-lg ">최고의 학습 전략이다</p>
         </div>
         <Margin margin={24} />
-        <p className="text-4xl font-bold "># 반갑습니다, 유성현입니다.</p>
+        <p className="text-2xl font-bold md:text-4xl ">
+          # 반갑습니다, 유성현입니다.
+        </p>
       </Container>
       <div className="flex w-screen h-4 bg-w-back" />
       <Container>
-        <p className="text-4xl font-bold text-key-lidi"># Info</p>
+        <p className="text-3xl font-bold md:text-4xl text-key-lidi"># Info</p>
         <Margin margin={40} />
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-col justify-between md:flex-row gap-y-4 md:gap-y-0">
           <div className="flex flex-row ">
-            <div className="flex flex-col mr-2 w-fit gap-y-4">
-              <p className="font-semibold text-md ">국문 이름</p>
-              <p className="font-semibold text-md ">영문 이름</p>
+            <div className="flex flex-col mr-2 w-fit gap-y-4 md:gap-y-4">
+              <p className="text-sm font-semibold md:text-base ">국문 이름</p>
+              <p className="text-sm font-semibold md:text-base ">영문 이름</p>
             </div>
-            <div className="flex flex-col w-fit gap-y-4 ">
-              <p className="text-md ">유성현</p>
-              <p className="text-md ">Sunghyun Yoo</p>
+            <div className="flex flex-col w-fit gap-y-4 md:gap-y-4 ">
+              <p className="text-sm md:text-base ">유성현</p>
+              <p className="text-sm md:text-base ">Sunghyun Yoo</p>
             </div>
           </div>
           <div className="flex flex-row ">
-            <div className="flex flex-col mr-2 w-fit gap-y-4">
-              <p className="font-semibold text-md ">병역 사항</p>
-              <p className="font-semibold text-md ">학력 사항</p>
+            <div className="flex flex-col mr-2 w-fit gap-y-4 md:gap-y-4">
+              <p className="text-sm font-semibold md:text-base ">병역 사항</p>
+              <p className="text-sm font-semibold md:text-base ">학력 사항</p>
             </div>
-            <div className="flex flex-col w-fit gap-y-4">
-              <p className="text-md ">만기 전역</p>
-              <p className="text-md ">중앙대학교 컴퓨터공학과 졸업</p>
+            <div className="flex flex-col w-fit gap-y-4 md:gap-y-4">
+              <p className="text-sm md:text-base ">만기 전역</p>
+              <p className="text-sm md:text-base ">
+                중앙대학교 컴퓨터공학과 졸업
+              </p>
             </div>
           </div>
           <div className="flex flex-row ">
-            <div className="flex flex-col mr-2 w-fit gap-y-4">
-              <p className="font-semibold text-md ">휴대전화</p>
-              <p className="font-semibold text-md ">이메일</p>
+            <div className="flex flex-col mr-2 w-fit gap-y-4 md:gap-y-4">
+              <p className="text-sm font-semibold md:text-base ">휴대전화</p>
+              <p className="text-sm font-semibold md:text-base ">이메일</p>
             </div>
-            <div className="flex flex-col w-fit gap-y-4">
-              <p className="text-md ">010-9780-9667</p>
-              <p className="text-md ">optid77@gmail.com</p>
+            <div className="flex flex-col w-fit gap-y-4 md:gap-y-4">
+              <p className="text-sm md:text-base ">010-9780-9667</p>
+              <p className="text-sm md:text-base ">optid77@gmail.com</p>
             </div>
           </div>
         </div>
       </Container>
       <div className="flex w-screen h-4 bg-w-back" />
       <Container>
-        <p className="text-4xl font-bold text-key-lidi"># Skills</p>
+        <p className="text-3xl font-bold md:text-4xl text-key-lidi"># Skills</p>
         <Margin margin={40} />
         <SkillCard
           title="React Native"
@@ -92,7 +99,8 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
         <SkillCard
           title="소통 능력"
           description={`소통의 기본인 경청과 의견 정리에 능숙합니다.
-다가가기 쉽고, 상대를 편하게 할 수 있는 소통 방법을 지향합니다.`}
+다가가기 쉽고, 상대를 편하게 할 수 있는 소통 방법을 지향합니다.
+그 결과, 팀 회고에서 "경청과 친절함으로 부담없이 소통할 수 있어 좋다"는 평가를 받아왔습니다.`}
           badgeColor={colors.manta}
           badgeText={"Soft Skill"}
         />
@@ -107,7 +115,7 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
       </Container>
       <div className="flex w-screen h-4 bg-w-back" />
       <Container>
-        <p className="text-4xl font-bold text-key-lidi"># Career</p>
+        <p className="text-3xl font-bold md:text-4xl text-key-lidi"># Career</p>
         <Margin margin={40} />
         <Company
           title="Roubit Inc"
@@ -129,6 +137,12 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
               contributionPercent={90}
               badgeColor={colors.manta}
               badgeText={"WEB"}
+              links={[
+                {
+                  title: "서비스 홈페이지",
+                  url: "https://pipit.im",
+                },
+              ]}
             />
             <ProjectCard
               title="기상 커뮤니티 앱, Pipit"
@@ -146,6 +160,20 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
               contributionPercent={50}
               badgeColor={colors.manta}
               badgeText={"APP"}
+              links={[
+                {
+                  title: "서비스 홈페이지",
+                  url: "https://pipit.im",
+                },
+                {
+                  title: "앱스토어 링크",
+                  url: "https://apps.apple.com/kr/app/id1631253620",
+                },
+                {
+                  title: "플레이스토어 링크",
+                  url: "https://play.google.com/store/apps/details?id=com.im.pipit",
+                },
+              ]}
             />
             <ProjectCard
               title="일정, 루틴 관리 앱, 루빗"
@@ -162,13 +190,39 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
               contributionPercent={35}
               badgeColor={colors.manta}
               badgeText={"APP"}
+              links={[
+                {
+                  title: "서비스 홈페이지",
+                  url: "https://www.roubit.me",
+                },
+                {
+                  title: "앱스토어 링크",
+                  url: "https://apps.apple.com/kr/app/id1527382961",
+                },
+                {
+                  title: "플레이스토어 링크",
+                  url: "https://play.google.com/store/apps/details?id=com.roubit",
+                },
+              ]}
             />
           </>
         </Company>
       </Container>
       <div className="flex w-screen h-4 bg-w-back" />
       <Container>
-        <p className="text-4xl font-bold text-key-lidi"># Projects</p>
+        <div className="flex flex-row items-baseline">
+          <p className="text-3xl font-bold md:text-4xl text-key-lidi">
+            # Projects
+          </p>
+
+          <a
+            href="https://blog.sunghyun.co/portfolio"
+            className="ml-4 text-base font-medium text-key-lidi md:text-sm"
+          >
+            : 포트폴리오 링크
+          </a>
+        </div>
+
         <Margin margin={40} />
         <Company
           title="점선면 (중앙대학교)"
@@ -191,6 +245,20 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
               contributionPercent={40}
               badgeColor={colors.manta}
               badgeText={"APP"}
+              links={[
+                {
+                  title: "깃허브 레포지토리",
+                  url: "https://github.com/StationSoen/Capstone",
+                },
+                {
+                  title: "앱스토어 링크",
+                  url: "https://apps.apple.com/kr/app/id1585635701",
+                },
+                {
+                  title: "플레이스토어 링크",
+                  url: "https://play.google.com/store/apps/details?id=com.soen.pointlineplane",
+                },
+              ]}
             />
           </>
         </Company>
@@ -215,13 +283,29 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
               contributionPercent={70}
               badgeColor={colors.manta}
               badgeText={"APP"}
+              links={[
+                {
+                  title: "깃허브 레포지토리",
+                  url: "https://github.com/kyw2271/cbhs_app",
+                },
+                {
+                  title: "앱스토어 링크",
+                  url: "https://apps.apple.com/kr/app/id1556278144",
+                },
+                {
+                  title: "플레이스토어 링크",
+                  url: "https://play.google.com/store/apps/details?id=com.soen.osori",
+                },
+              ]}
             />
           </>
         </Company>
       </Container>
       <div className="flex w-screen h-4 bg-w-back" />
       <Container>
-        <p className="text-4xl font-bold text-key-lidi"># Activities</p>
+        <p className="text-3xl font-bold md:text-4xl text-key-lidi">
+          # Activities
+        </p>
         <Margin margin={40} />
         <Company title="교육">
           <SimpleProjectCard
@@ -249,7 +333,7 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
           />
           <SimpleProjectCard
             periodText="2021.11"
-            title="2021 다빈치 SW/AI TECH FAIR 우수상"
+            title="다빈치 SW/AI TECH FAIR 우수상"
             description={
               '"인적성 공간지각 유형 문제풀이 앱, 점선면" 프로젝트로\n우수상을 수상하였습니다.'
             }
@@ -258,17 +342,26 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
       </Container>
       <div className="flex w-screen h-4 bg-w-back" />
       <Container>
-        <p className="text-4xl font-bold text-key-lidi"># Links</p>
+        <p className="text-3xl font-bold md:text-4xl text-key-lidi"># Links</p>
         <Margin margin={40} />
-        <a className="text-md w-fit " href="https://blog.sunghyun.co">
+        <a
+          className="text-sm md:text-base w-fit "
+          href="https://blog.sunghyun.co"
+        >
           블로그 링크 : https://blog.sunghyun.co
         </a>
         <Margin margin={12} />
-        <a className="text-md w-fit " href="https://portfolio.sunghyun.co">
+        <a
+          className="text-sm md:text-base w-fit "
+          href="https://portfolio.sunghyun.co"
+        >
           포트폴리오 링크 : https://portfolio.sunghyun.co
         </a>
         <Margin margin={12} />
-        <a className="text-md w-fit " href="https://github.com/StationSoen">
+        <a
+          className="text-sm md:text-base w-fit "
+          href="https://github.com/StationSoen"
+        >
           깃허브 링크 : https://github.com/StationSoen
         </a>
       </Container>
@@ -277,7 +370,7 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
       <Container>
         <div className="flex flex-row justify-end w-full">
           <Margin margin={40} />
-          <p className="text-sm w-fit">Last Update: 2022.08.10</p>
+          <p className="text-xs md:text-sm w-fit">Last Update: 2022.08.13</p>
           <Margin margin={40} />
         </div>
       </Container>
@@ -285,9 +378,9 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
   )
 }
 
-const Container = ({ children }: { children?: ReactNode }) => {
+export const Container = ({ children }: { children?: ReactNode }) => {
   return (
-    <div className="flex flex-col w-full max-w-4xl px-10 py-10 column ">
+    <div className="flex flex-col w-full max-w-4xl px-6 py-10 md:px-10 column ">
       {children}
     </div>
   )
@@ -302,9 +395,9 @@ interface CompanyProps {
 
 const Company = ({ title, position, periodText, children }: CompanyProps) => {
   return (
-    <div className="flex flex-row flex-1 w-full ">
+    <div className="flex flex-col flex-1 w-full md:flex-row ">
       {/* 회사명 */}
-      <div className="flex flex-col w-2/6 ">
+      <div className="flex flex-col w-full mb-4 md:mb-0 md:w-2/6 ">
         <div className="relative flex w-fit h-fit">
           <div className="absolute bottom-0 flex w-full h-3/6 bg-key-lidi/25"></div>
           <p className="z-10 text-2xl font-bold ">{title}</p>
@@ -322,7 +415,7 @@ const Company = ({ title, position, periodText, children }: CompanyProps) => {
           </>
         )}
       </div>
-      <div className="flex flex-col w-4/6 ">{children}</div>
+      <div className="flex flex-col w-full md:w-4/6 ">{children}</div>
     </div>
   )
 }
@@ -336,6 +429,7 @@ interface ProjectCardProps {
   contributionPercent: number
   badgeText?: string
   badgeColor?: string
+  links: Link[]
 }
 
 const ProjectCard = ({
@@ -347,56 +441,66 @@ const ProjectCard = ({
   contributionPercent,
   badgeText,
   badgeColor,
+  links,
 }: ProjectCardProps) => {
   return (
     <div className="relative flex flex-col ">
-      <div className="flex absolute h-[85%] w-1 bg-w-d/25 left-[-24px] " />
+      <div className="flex absolute h-[85%] w-1 bg-w-d/25 left-[-24px] md:visible invisible " />
       <div className="flex flex-row items-center">
         <div className="relative flex w-fit h-fit">
           <div className="absolute bottom-0 flex w-full h-3/6 bg-key-manta/25"></div>
-          <p className="z-10 text-2xl font-bold ">{title}</p>
+          <p className="z-10 text-xl font-bold md:text-2xl ">{title}</p>
         </div>
         {badgeText && badgeColor && (
-          <>
-            <Margin isHorizontal margin={16} />
-            <p
-              className="px-2 text-xs border rounded-full "
-              style={{
-                borderColor: badgeColor,
-                color: badgeColor,
-              }}
-            >
-              {badgeText}
-            </p>
-          </>
+          <p
+            className="ml-2 md:ml-4 px-1 md:px-2 text-[0.5rem] md:text-xs border rounded-full hidden md:flex "
+            style={{
+              borderColor: badgeColor,
+              color: badgeColor,
+            }}
+          >
+            {badgeText}
+          </p>
         )}
       </div>
       <Margin margin={4} />
-      <p className="ml-4 text-sm ">{periodText}</p>
+      <p className="ml-4 text-xs md:text-sm ">{periodText}</p>
       <Margin margin={16} />
 
-      <p className="text-lg font-bold ">개요</p>
+      <p className="text-base font-bold md:text-lg ">개요</p>
       <Margin margin={8} />
-      <p className="ml-4 whitespace-pre-wrap text-md ">{description}</p>
+      <p className="ml-4 text-sm whitespace-pre-wrap md:text-base ">
+        {description}
+      </p>
       <Margin margin={16} />
 
       {/* What I do */}
-      <p className="text-lg font-bold ">{`기여한 부분 (기여도: ${contributionPercent
+      <p className="text-base font-bold md:text-lg ">{`기여한 부분 (기여도: ${contributionPercent
         .toString()
         .padStart(2, "0")}%)`}</p>
       <Margin margin={8} />
       <div className="flex flex-col gap-1">
         {whatIdos.map(e => (
-          <p className="ml-4 text-md ">{e}</p>
+          <p className="ml-4 text-sm md:text-base ">{e}</p>
         ))}
       </div>
       <Margin margin={16} />
       {/* What I do */}
-      <p className="text-lg font-bold ">기술 스택</p>
+      <p className="text-base font-bold md:text-lg ">기술 스택</p>
       <Margin margin={8} />
       <div className="flex flex-row gap-1">
         {techStacks.map(e => (
-          <p className="ml-4 text-md ">{e}</p>
+          <p className="ml-4 text-sm md:text-base ">{e}</p>
+        ))}
+      </div>
+      <Margin margin={16} />
+      <p className="text-base font-bold md:text-lg ">링크</p>
+      <Margin margin={8} />
+      <div className="flex flex-row gap-1">
+        {links.map(e => (
+          <a href={e.url} className="ml-4 text-sm md:text-base ">
+            {e.title}
+          </a>
         ))}
       </div>
       <Margin margin={40} />
@@ -427,10 +531,11 @@ const SkillCard = ({
               backgroundColor: badgeColor + "40",
             }}
           ></div>
-          <p className="z-10 text-2xl font-bold ">{title}</p>
+          <p className="z-10 text-xl font-bold md:text-2xl ">{title}</p>
         </div>
+
         <p
-          className="px-2 text-xs border rounded-full "
+          className="px-1 md:px-2 text-[0.5rem] md:text-xs border rounded-full hidden md:flex "
           style={{
             borderColor: badgeColor,
             color: badgeColor,
@@ -441,7 +546,9 @@ const SkillCard = ({
       </div>
       <Margin margin={16} />
 
-      <p className="ml-4 whitespace-pre-wrap text-md ">{description}</p>
+      <p className="ml-4 text-sm whitespace-pre-wrap md:text-base ">
+        {description}
+      </p>
       <Margin margin={40} />
     </div>
   )
@@ -462,23 +569,25 @@ const SimpleProjectCard = ({
 }: SimpleProjectCard) => {
   return (
     <div className="relative flex flex-col ">
-      <div className="flex absolute h-[85%] w-1 bg-w-d/25 left-[-24px] " />
+      <div className="flex absolute h-[85%] w-1 bg-w-d/25 left-[-24px] md:visible invisible  " />
       <div className="relative flex w-fit h-fit">
         <div className="absolute bottom-0 flex w-full h-3/6 bg-key-manta/25"></div>
-        <p className="z-10 text-2xl font-bold ">{title}</p>
+        <p className="z-10 text-xl font-bold md:text-2xl ">{title}</p>
       </div>
       <Margin margin={4} />
-      <p className="ml-4 text-sm ">{periodText}</p>
+      <p className="ml-4 text-xs md:text-sm ">{periodText}</p>
       <Margin margin={8} />
 
       {descriptionTitle && (
         <>
-          <p className="text-lg font-bold ">{descriptionTitle}</p>
+          <p className="text-base font-bold md:text-lg ">{descriptionTitle}</p>
           <Margin margin={8} />
         </>
       )}
-      <p className="ml-4 whitespace-pre-wrap text-md ">{description}</p>
-      <Margin margin={40} />
+      <p className="ml-4 text-sm whitespace-pre-wrap md:text-base ">
+        {description}
+      </p>
+      <div className="flex w-full h-3 md:h-10" />
     </div>
   )
 }
