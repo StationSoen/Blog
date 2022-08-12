@@ -362,7 +362,7 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
           className="text-sm md:text-base w-fit "
           href="https://github.com/StationSoen"
         >
-          깃허브 링크 : https://github.com/StationSoen
+          깃허브 링크 : https://blog.sunghyun.co/portfolio
         </a>
       </Container>
       <div className="flex w-screen h-4 bg-w-back" />

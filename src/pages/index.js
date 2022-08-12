@@ -9,6 +9,27 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
+  // early return
+  return (
+    <div className="flex flex-col items-center justify-center w-screen h-screen gap-4">
+      <p className="text-4xl font-bold font-score text-black-d">
+        블로그 준비중입니다.
+      </p>
+      <a
+        href="https://blog.sunghyun.co/about"
+        className="text-2xl font-bold font-score text-black-d text-key-lidi"
+      >
+        이력서 링크
+      </a>
+      <a
+        href="https://blog.sunghyun.co/portfolio"
+        className="text-2xl font-bold font-score text-black-d text-key-lidi"
+      >
+        포트폴리오 링크
+      </a>
+    </div>
+  )
+
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
