@@ -348,21 +348,21 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
           className="text-sm md:text-base w-fit "
           href="https://blog.sunghyun.co"
         >
-          블로그 링크 : https://blog.sunghyun.co
+          블로그 링크
         </a>
         <Margin margin={12} />
         <a
           className="text-sm md:text-base w-fit "
-          href="https://portfolio.sunghyun.co"
+          href="https://blog.sunghyun.co/portfolio"
         >
-          포트폴리오 링크 : https://portfolio.sunghyun.co
+          포트폴리오 링크
         </a>
         <Margin margin={12} />
         <a
           className="text-sm md:text-base w-fit "
           href="https://github.com/StationSoen"
         >
-          깃허브 링크 : https://github.com/StationSoen
+          깃허브 링크
         </a>
       </Container>
       <div className="flex w-screen h-4 bg-w-back" />
@@ -496,7 +496,7 @@ const ProjectCard = ({
       <Margin margin={16} />
       <p className="text-base font-bold md:text-lg ">링크</p>
       <Margin margin={8} />
-      <div className="flex flex-row gap-1">
+      <div className="flex flex-col gap-2 md:gap-1 md:flex-row">
         {links.map(e => (
           <a href={e.url} className="ml-4 text-sm md:text-base ">
             {e.title}
