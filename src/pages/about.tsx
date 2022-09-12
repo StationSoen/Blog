@@ -119,8 +119,8 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
         <Margin margin={40} />
         <Company
           title="Roubit Inc"
-          position="FE Developer / 정규직"
-          periodText="2021.09.01 - 현재"
+          position="FE Developer"
+          periodText="2021.09.01 - 2022.08.31"
         >
           <>
             <ProjectCard
@@ -146,7 +146,7 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
             />
             <ProjectCard
               title="기상 커뮤니티 앱, Pipit"
-              periodText={"2022.02 - 현재"}
+              periodText={"2022.02 - 2022.08"}
               description={
                 "알람 및 기상 커뮤니티 앱입니다. 미라클 모닝과 같은 아침 시간을 활용한 자기개발 시장을 겨냥해 개발한 기상 커뮤니티 앱입니다.\n앱의 전반적인 UI/UX을 전담해 개발했습니다.\n"
               }
@@ -177,7 +177,7 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
             />
             <ProjectCard
               title="일정, 루틴 관리 앱, 루빗"
-              periodText={"2021.09 - 현재"}
+              periodText={"2021.09 - 2022.07"}
               description={
                 "습관, 루틴 관리 앱입니다. 게이미피케이션과 보상회로를 통한 습관, 루틴을 더 잘 지켜나갈 수 있도록 사람들을 돕고 있습니다.\n대규모 리뉴얼 작업, 유지보수, 기능 추가 위주의 개발을 진행하고 있습니다."
               }
