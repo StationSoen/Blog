@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans-kr": "^4.5.9",
-    "gatsby": "^4.19.0",
+    "gatsby": "^4.24.4",
     "gatsby-plugin-feed": "^4.19.0",
     "gatsby-plugin-gatsby-cloud": "^4.19.0",
     "gatsby-plugin-google-analytics": "^4.19.0",
