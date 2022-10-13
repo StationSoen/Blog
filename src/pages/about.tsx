@@ -118,8 +118,18 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
         <p className="text-3xl font-bold md:text-4xl text-key-lidi"># Career</p>
         <Margin margin={40} />
         <Company
-          title="Roubit Inc"
-          position="FE Developer"
+          title="Kodebox"
+          position="Software Engineer / 정규직"
+          periodText="2022.10.04 - 현재"
+        >
+          <div className="relative flex flex-col md:h-[120px] h-0 ">
+            <div className="flex absolute h-[85%] w-1 bg-w-d/25 left-[-24px] md:visible invisible " />
+          </div>
+        </Company>
+        <Margin margin={20} />
+        <Company
+          title="Roubit"
+          position="Front-End Developer"
           periodText="2021.09.01 - 2022.08.31"
         >
           <>
@@ -370,7 +380,7 @@ Promise / Async 등 비동기 프로그래밍을 할 수 있습니다.`}
       <Container>
         <div className="flex flex-row justify-end w-full">
           <Margin margin={40} />
-          <p className="text-xs md:text-sm w-fit">Last Update: 2022.08.13</p>
+          <p className="text-xs md:text-sm w-fit">Last Update: 2022.10.13</p>
           <Margin margin={40} />
         </div>
       </Container>
