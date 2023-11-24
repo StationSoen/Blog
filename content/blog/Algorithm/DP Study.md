@@ -123,7 +123,7 @@ DIFF | k: 7, l: 6, ABCBDAB, BDCABA. 4
 > 🎇 무게 제한이 50인 배낭에 위와 같은 세 개 중 가치가 최대가 되도록 물건을 넣는 문제
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/54faa048-caa4-4c08-b2cc-4aa8fd485072/8184e123-b920-4b7e-81b6-dcd84ac372d1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231123T143552Z&X-Amz-Expires=3600&X-Amz-Signature=70f3daf72a49911c0d427c1de2519bc6154a1868e4529a7ff2b2292d9c2750bc&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/54faa048-caa4-4c08-b2cc-4aa8fd485072/8184e123-b920-4b7e-81b6-dcd84ac372d1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231124T143602Z&X-Amz-Expires=3600&X-Amz-Signature=d97d070d62948c38273321587dc3a753acbcc100f51d128ecaff46e1d9e4b455&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 |           | 0 | 1    | 2    | 3    | 4    | 5     | 6     | 7     |
